@@ -21,4 +21,6 @@ Código en C++ que implementa:
 
 	- `./a.exe grafo.txt`
 
+- Luego, se imprimirá en la consola, el grafo y los resultados de las 4 búsquedas. 
+
 
