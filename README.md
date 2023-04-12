@@ -10,7 +10,7 @@ Código en C++ que implementa:
  3. Finalmente, al encontrar un nodo hoja (sin vecinos) o el nodo solución (o la solución óptima) se detendrá la búsqueda, y, además, se almacena el camino, costo y nodos expandidos.
 
 ## Cosas a tener en cuenta
- - Para la búsqueda por costo uniforme y A*, no esta implementada la poda, es decir, si existe un camino hacia un nodo que tiene un costo menor en comparación con otro camino hacia ese mismo nodo, ambos caminos son expandidos, que puede ser innecesario.
+ - Para la búsqueda por costo uniforme y A*, no esta implementada la poda, es decir, si existe un camino hacia un nodo que tiene un costo menor en comparación con otro camino hacia ese mismo nodo, ambos caminos son expandidos, lo que es innecesario.
 
 # Instrucciones 
 - Para compilar: $ g++ busquedas.cpp
