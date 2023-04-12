@@ -15,7 +15,7 @@ Código en C++ que implementa:
 # Instrucciones 
 - Para compilar: g++ busquedas.cpp
 
-	- `$ g++ busquedas.cpp`
+	- `g++ busquedas.cpp`
 
 - Para ejecutar: ejecutable grafo.txt
 
