@@ -13,11 +13,11 @@ Código en C++ que implementa:
  - Para la búsqueda por costo uniforme y A*, no esta implementada la poda, es decir, si existe un camino hacia un nodo que tiene un costo menor en comparación con otro camino hacia ese mismo nodo, ambos caminos son expandidos, que puede ser innecesario.
 
 # Instrucciones 
-- Para compilar: g++ busquedas.cpp
+- Para compilar: $ g++ busquedas.cpp
 
 	- `g++ busquedas.cpp`
 
-- Para ejecutar: ejecutable grafo.txt
+- Para ejecutar: $ ejecutable grafo.txt
 
 	- `./a.exe grafo.txt`
 
