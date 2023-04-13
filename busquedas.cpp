@@ -233,7 +233,7 @@ void g(nodo *actual)
 
         camino.push_back(actual->nombre), actual->visited++;
 
-        int min = INT_MAX, posmin;
+        int min = 99, posmin;
         for (int i = 0; i < actual->e.size(); i++) // buscar el min de los vecinos
             if (actual->e[i]->h < min)
                 min = actual->e[i]->h, posmin = i;
@@ -279,7 +279,7 @@ void cu(nodo *actual)
     vector<caminos> paths;                    // caminos
     vector<pair<string, int>> expandidos;     // nodos y cuantas veces fue expandido
     int n = 0;                                // indice
-    int min = INT_MAX - 1, mingoal = INT_MAX; // costo min del sig nodo y del camino hacia goal
+    int min = 90, mingoal = 99; // costo min del sig nodo y del camino hacia goal
     caminos cgoal;                            // camino que llega a goal
     caminos root;                             // camino inicial
     root.camino.push_back(actual->nombre), paths.push_back(root), cgoal.costo = mingoal;
@@ -324,7 +324,7 @@ void cu(nodo *actual)
         paths.erase(paths.begin() + n);
 
         // busco entre los caminos nuevos posibles y los caminos anteriores el que tenga minimo costo
-        min = INT_MAX;
+        min = 99;
         for (int i = 0; i < paths.size(); i++)
             if (paths[i].costo < min)
                 min = paths[i].costo, n = i;
@@ -354,7 +354,7 @@ void a(nodo *actual)
     vector<caminos> paths;                    // caminos
     vector<pair<string, int>> expandidos;     // nodos y cuantas veces fue expandido
     int n = 0;                                // indice
-    int min = INT_MAX - 1, mingoal = INT_MAX; // costo min del sig nodo y del camino hacia goal
+    int min = 90, mingoal = 99; // costo min del sig nodo y del camino hacia goal
     caminos cgoal;                            // camino que llega a goal
     caminos root;                             // camino inicial
     root.camino.push_back(actual->nombre), paths.push_back(root), cgoal.costo = mingoal;
@@ -401,7 +401,7 @@ void a(nodo *actual)
         paths.erase(paths.begin() + n);
 
         // busco entre los caminos nuevos posibles y los caminos anteriores el que tenga minimo costo
-        min = INT_MAX;
+        min = 99;
         for (int i = 0; i < paths.size(); i++)
             if (paths[i].f < min)
                 min = paths[i].f, n = i;
